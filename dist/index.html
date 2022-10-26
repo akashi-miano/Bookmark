@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<!-- external stylesheet -->
+		<link rel="stylesheet" href="css/style.css" media="all">
+		<!-- font awesome -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<!-- external JavaScript -->
+		<script defer src="js/script.js"></script>
+		<title></title>
+	</head>
+	<body>
+		<header class="hero">
+			<!-- Navigation -->
+			<nav class="hero__nav flex items-center justify-between container gap-4 md:gap-0  md:relative">
+				<div class="nav__img-wrapper z-50">
+					<img class="nav__logo" src="images/logo-bookmark.svg" alt="">
+				</div>
+				<ul class="nav__list hidden flex md:flex items-center gap-4 md:gap-8 fixed md:relative top-0 left-0 w-full md:w-auto h-full bg-zinc-800 bg-opacity-80 md:bg-transparent  flex-col md:flex-row pt-[15rem] md:pt-0">
+					<li class="nav__item border-b pb-2 md:pb-0 border-gray-200 md:border-0 text-center w-[85%] md:w-auto"><a href="#features">Features</a></li>
+					<li class="nav__item border-b pb-2 md:pb-0 border-gray-200 md:border-0 text-center w-[85%] md:w-auto"><a href="#download">Download</a></li>
+					<li class="nav__item border-b pb-2 md:pb-0 border-gray-200 md:border-0 text-center w-[85%] md:w-auto"><a href="#faq">FAQ</a></li>
+					<li class="nav__item text-center w-[85%] md:w-auto"><a class="btn btn-primary" href="#">Login</a></li>
+				</ul>
+				<!-- mobile nav -->
+				<button class="mobile-nav md:hidden z-100">
+					<span class="hamburger"></span>
+				</button>
+			</nav>
+			<!-- Hero content -->
+			<div class="hero__content-wrapper container p-8">
+				<div class="hero__content text-center md:text-left grid grid-cols-1 md:grid-cols-2 items-center flow-content--lg">
+					<div class="hero__desc flow-content--lg">
+						<h1 class="hero__title text-4xl md:text-7xl font-bold"> A Simple Bookmark Manager </h1>
+						<p class="hero__desc text-xl md:text-2xl text-gray-400 mx-auto md:mx-0 max-w-[450px] "> A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free. </p>
+						<div class="hero__btn-wrapper flex items-center justify-center md:justify-start gap-4">
+							<a class="btn btn-secondary capitalize" href="">get it on chrome</a>
+							<a class="btn btn-light capitalize" href="">get it on firefox</a>
+						</div>
+					</div>
+					<div class="hero__img-wrapper order-[-1] md:order-[0]">
+						<img class="img hero__img" src="images/illustration-hero.svg" alt="">
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<!-- Features section -->
+		<section class="features pt-14" id="features">
+			<div class="features__wrapper container ">
+				<header class="features__headear flow-content--lg">
+					<h2 class="section-title">Features</h2>
+					<p class="section-desc"> Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go. </p>
+				</header>
+				<!-- Features contents-->
+				<div class="features__content-wrapper mt-14">
+					<ul class="features__list flex flex-col md:flex-row items-center gap-8 md:gap-14 justify-center border-0 md:border-b md:border-gray-300 pb-4 mb-8 w-fit mx-auto">
+						<li class="features__item"><a class="current simple" href="">Simple Bookmarking </a></li>
+						<li class="features__item"><a class="search" href="">Speedy Searching</a></li>
+						<li class="features__item"><a class="share" href="">Easy Sharing</a></li>
+					</ul>
+					<div class="features__content container grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-14 items-center container">
+						<div class="features__img-wrapper">
+							<img class="features__img w-full" src="images/illustration-features-tab-1.svg"/>
+						</div>
+						<div class="features__txt flow-content--lg text-center md:text-left">
+							<h3 class="features__title text-3xl font-bold"> Bookmark in one click </h3>
+							<p class="features__desc text-lg text-gray-400 mx-auto md:mx-0 max-w-[450px] "> Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites. </p>
+							<a class="btn btn-secondary py-3" href="">More Info</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Extension section -->
+		<section class="extension pt-14" id="download">
+			<div class="extension__wrapper container flow-content--lg">
+				<header class="extension__header flow-content--lg">
+					<h2 class="section-title"> Download the extension </h2>
+					<p class="section-desc"> We've got more browsers in the pipeline. Please do let us know if you've got a favourite you'd like us to prioritize. </p>
+				</header>
+				<div class="extenstion__content container grid grid-cols-1 md:grid-cols-3 gap-6">
+					<div class="extenstion-card shadow-xl text-center p-4">
+						<div class="exteion-card__content flow-content--md">
+							<div class="extention-card__img-wrapper flex justify-center">
+								<img class="extension-img" src="images/logo-chrome.svg" alt="">
+							</div>
+							<header class="extension-card__header border-2-b border-b-4 border-dotted border-gray-300 pb-4">
+								<h3 class="extension-card__title text-2xl font-bold">Add to Chrome</h3>
+								<p class="extension-card__descd text-gray-500">Minimum Version 62</p>
+							</header>
+							<div class="extension-card__btn-wrapper">
+								<a class="btn btn-secondary py-3" href="">Add & Install Extension</a>
+							</div>
+						</div>
+					</div>
+					<div class="extenstion-card shadow-xl text-center p-4 md:translate-y-[2rem]">
+						<div class="exteion-card__content flow-content--md">
+							<div class="extention-card__img-wrapper flex justify-center">
+								<img class="extension-img" src="images/logo-firefox.svg" alt="">
+							</div>
+							<header class="extension-card__header border-2-b  border-2-b border-b-4 border-dotted border-gray-300 pb-4">
+								<h3 class="extension-card__title text-2xl font-bold">Add to Firefox</h3>
+								<p class="extension-card__descd text-gray-500">Minimum Version 55</p>
+							</header>
+							<div class="extension-card__btn-wrapper">
+								<a class="btn btn-secondary py-3" href="">Add & Install Extension</a>
+							</div>
+						</div>
+					</div>
+					<div class="extenstion-card shadow-xl text-center p-4 md:translate-y-[4rem]">
+						<div class="exteion-card__content flow-content--md">
+							<div class="extention-card__img-wrapper flex justify-center">
+								<img class="extension-img" src="images/logo-opera.svg" alt="">
+							</div>
+							<header class="extension-card__header  border-2-b  border-2-b border-b-4 border-dotted border-gray-300 pb-4">
+								<h3 class="extension-card__title text-2xl font-bold">Add to Opera</h3>
+								<p class="extension-card__descd text-gray-500">Minimum Version 46</p>
+							</header>
+							<div class="extension-card__btn-wrapper">
+								<a class="btn btn-secondary py-3" href="">Add & Install Extension</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<!-- FAQ section -->
+		<section class="faq pt-14" id="faq">
+			<div class="faq__wrapper container flow-content--lg">
+				<header class="header faq__header flow-content--md">
+					<h2 class="section-title"> Frequently Asked Questions </h2>
+					<p class="section-desc text-black max-w-[600px]"> Here are some of our FAQs. If you have any other questions you'd like answered please feel free to email us. </p>
+				</header>
+				<div class="faq__content container">
+					<ul class="faq__list max-w-[800px] mx-auto text-gray-600 flow-content--lg">
+						<li class="faq__item">
+							<div class="faq__question-wrapper flex items-center justify-between pb-2 border-b-2 border-gray-200 gap-4 md:gap-0">
+								<p class="faq__question text-lg"> What is Bookmark? </p>
+								<i class="fa-solid fa-chevron-down font-bold text-xl"></i>
+							</div>
+							<div class="faq__answer-wrapper max-h-[0] overflow-hidden">
+								<p class="faq__answer py-4 text-gray-400 ">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, repellat amet doloribus consequuntur eos similique provident tempora voluptates iure quia fuga dicta voluptatibus culpa mollitia recusandae delectus id suscipit labore?
+								</p>
+							</div>
+						</li>
+						<li class="faq__item ">
+							<div class="faq__question-wrapper flex items-center justify-between pb-2 border-b-2 border-gray-200 gap-4 md:gap-0">
+								<p class="faq__question text-lg"> How can I request a new browser? </p>
+								<i class="fa-solid fa-chevron-down font-bold text-xl"></i>
+							</div>
+							<div class="faq__answer-wrapper max-h-[0] overflow-hidden">
+								<p class="faq__answer py-4 text-gray-400">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, repellat amet doloribus consequuntur eos similique provident tempora voluptates iure quia fuga dicta voluptatibus culpa mollitia recusandae delectus id suscipit labore?
+								</p>
+							</div>
+						</li>
+						<li class="faq__item ">
+							<div class="faq__question-wrapper flex items-center justify-between pb-2 border-b-2 border-gray-200 gap-4 md:gap-0">
+								<p class="faq__question text-lg"> Is ther a mobile app? </p>
+								<i class="fa-solid fa-chevron-down font-bold text-xl"></i>
+							</div>
+							<div class="faq__answer-wrapper max-h-[0] overflow-hidden">
+								<p class="faq__answer py-4 text-gray-400">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, repellat amet doloribus consequuntur eos similique provident tempora voluptates iure quia fuga dicta voluptatibus culpa mollitia recusandae delectus id suscipit labore?
+								</p>
+							</div>
+						</li>
+						<li class="faq__item ">
+							<div class="faq__question-wrapper flex items-center justify-between pb-2 border-b-2 border-gray-200 gap-4 md:gap-0">
+								<p class="faq__question text-lg"> What about other Chromium browsers </p>
+								<i class="fa-solid fa-chevron-down font-bold text-xl"></i>
+							</div>
+							<div class="faq__answer-wrapper max-h-[0] overflow-hidden">
+								<p class="faq__answer py-4 text-gray-400">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, repellat amet doloribus consequuntur eos similique provident tempora voluptates iure quia fuga dicta voluptatibus culpa mollitia recusandae delectus id suscipit labore?
+								</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		
+		<!-- News letter section -->
+		<section class="news pt-14 bg-blue-600">
+			<div class="news__wrapper container">
+				<div class="news__content">
+					<header class="news__header flow-content--lg flex flex-col items-center justify-center">
+						<h2 class="news__title section-title text-4xl text-white order-1 font-extrabold mt-4"> Stay up-to-date with what <br>we're doing </h2>
+						<p class="news__desc text-white text-xl"> 35,000+ Already Joined </p>
+					</header>
+					<form class="news__form flex flex-col md:flex-row items-center gap-4 justify-center mt-6" action="">
+						<input class="p-3 rounded-xl placeholder-gray-500 focus:outline-none" type="email" placeholder="Enter your email address">
+						<button class="btn bg-red-500 text-white rounded-lg hover:bg-opacity-90 font-bold">Contact Us</button>
+					</form>
+				</div>
+			</div>
+		</section>
+
+		<!-- Footer -->
+		<footer class="py-8">
+			<div class="footer__wrapper container">
+				<div class="footer__content">
+					<nav class="footer__nav flex flex-col md:flex-row items-center justify-between">
+						<ul class="footer__list flex-col md:flex-row flex items-center gap-8 md:gap-14 mb-8 md:mb-0">
+							<div class="footer__logo-wrapper">
+								<img class="footer__logo" src="images/logo-bookmark-footer.svg" alt="">
+							</div>
+							<li class="footer__item"><a href="">Features</a></li>
+							<li class="footer__item"><a href="">Download</a></li>
+							<li class="footer__item"><a href="">FAQ</a></li>
+						</ul>
+						<ul class="footer__social-list flex items-center gap-8">
+							<li class="footer__social-item">
+								<a href=""><i class="fa-brands fa-square-facebook text-white text-3xl hover:text-red-500 duration-300"></i></a>
+							</li>
+							<li class="footer__social-item">
+								<a href=""><i class="fa-brands fa-twitter text-white text-3xl hover:text-red-500 duration-300"></i></a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
