@@ -4,6 +4,7 @@ const nav = document.querySelector('.hero__nav')
 const loginBtn = document.querySelector('.hero__nav .btn-primary')
 const overlay = document.querySelector('.nav__list')
 const links =  document.querySelectorAll('.hero__nav a')
+const logo = document.querySelector('.nav__logo')
 // features switch
 const img = document.querySelector('.features__img')
 const title = document.querySelector('.features__title') 
@@ -62,11 +63,13 @@ openBtn.addEventListener('click', () => {
 		overlay.classList.remove("hidden")
 		nav.classList.add('sticky')
 		loginBtn.classList.remove('btn-primary')
+		logo.setAttribute('src','images/logo-bookmark-footer.svg')
 	} else {
 		openBtn.classList.remove('open')
 		overlay.classList.add("hidden")
 		nav.classList.remove('sticky')
 		loginBtn.classList.add('btn-primary')
+		logo.setAttribute('src','images/logo-bookmark.svg')
 
 	}
 })
@@ -79,5 +82,6 @@ links.forEach(link => {
 		overlay.classList.add("hidden")
 		nav.classList.remove('sticky')
 		loginBtn.classList.add('btn-primary')
+		logo.setAttribute('src','images/logo-bookmark.svg')
 	})
 })
