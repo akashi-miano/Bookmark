@@ -510,7 +510,7 @@ video {
   font-size: 0.875rem;
   line-height: 1.25rem;
 }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
 
   .btn {
     font-size: 1.25rem;
@@ -603,14 +603,35 @@ video {
 .fixed {
   position: fixed;
 }
+.absolute {
+  position: absolute;
+}
+.relative {
+  position: relative;
+}
 .top-0 {
   top: 0px;
 }
 .left-0 {
   left: 0px;
 }
+.bottom-\[0\] {
+  bottom: 0;
+}
+.left-\[60\%\] {
+  left: 60%;
+}
+.bottom-\[-5rem\] {
+  bottom: -5rem;
+}
+.right-\[60\%\] {
+  right: 60%;
+}
 .z-50 {
   z-index: 50;
+}
+.z-\[-1\] {
+  z-index: -1;
 }
 .order-\[-1\] {
   order: -1;
@@ -646,6 +667,9 @@ video {
 .h-full {
   height: 100%;
 }
+.h-\[300px\] {
+  height: 300px;
+}
 .max-h-\[0\] {
   max-height: 0;
 }
@@ -654,6 +678,9 @@ video {
 }
 .w-\[85\%\] {
   width: 85%;
+}
+.w-\[2000px\] {
+  width: 2000px;
 }
 .w-fit {
   width: -moz-fit-content;
@@ -695,11 +722,26 @@ video {
 .overflow-hidden {
   overflow: hidden;
 }
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
 .rounded-xl {
   border-radius: 0.75rem;
 }
 .rounded-lg {
   border-radius: 0.5rem;
+}
+.rounded-tl-full {
+  border-top-left-radius: 9999px;
+}
+.rounded-bl-full {
+  border-bottom-left-radius: 9999px;
+}
+.rounded-tr-full {
+  border-top-right-radius: 9999px;
+}
+.rounded-br-full {
+  border-bottom-right-radius: 9999px;
 }
 .border-0 {
   border-width: 0px;
@@ -728,9 +770,9 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(39 39 42 / var(--tw-bg-opacity));
 }
-.bg-blue-600 {
+.bg-blue-500 {
   --tw-bg-opacity: 1;
-  background-color: rgb(37 99 235 / var(--tw-bg-opacity));
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
 }
 .bg-red-500 {
   --tw-bg-opacity: 1;
@@ -751,6 +793,10 @@ video {
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+}
+.py-14 {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
 }
 .py-4 {
   padding-top: 1rem;
@@ -1003,12 +1049,12 @@ footer {
 
 /* mobile media */
 @media (max-width: 48em) {
-	.hero a {
+	.nav__list a {
     --tw-text-opacity: 1 !important;
     color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
     transition-duration: 300ms !important;
   }
-	.hero a:hover {
+	.nav__list a:hover {
     --tw-text-opacity: 1 !important;
     color: rgb(239 68 68 / var(--tw-text-opacity)) !important;
   }
@@ -1130,5 +1176,11 @@ footer {
   .md\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+}
+@media (min-width: 1024px) {
+
+  .lg\:block {
+    display: block;
   }
 }
